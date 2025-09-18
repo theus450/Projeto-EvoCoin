@@ -1,0 +1,101 @@
+1. HTML - A estrutura da página
+
+No arquivo login-cadastro.html
+
+Tags básicas
+
+nav Barra de navegação com logo e links.
+
+main Contém os formulários de login e cadastro.
+
+Dois formulários
+
+Um para login (id=loginForm)
+
+Outro para cadastro (id=registerForm), inicialmente escondido (style=displaynone;)
+
+Inputs Para email, senha e confirmação de senha no cadastro.
+
+Links para alternar entre os formulários
+
+Cadastre-se aqui para abrir o formulário de cadastro.
+
+Faça login aqui para voltar para o login.
+
+2. CSS - A aparência
+
+No login.css, você define
+
+Cores e fontes Uso de roxo (#4b44b6) como cor principal para combinar com seu site.
+
+Layout
+
+Centraliza o conteúdo, define tamanho máximo para o formulário (400px).
+
+Formulários em colunas com inputs e botões grandes e fáceis de usar.
+
+Botões e links Estilo visual para botões e links, com hover para feedback visual.
+
+3. JavaScript - A lógica e interação
+
+No login.js
+
+Mostraresconder formulários
+
+Com addEventListener nos links, alteramos o display dos formulários para alternar entre login e cadastro.
+
+Validação de email
+
+Função simples que usa regex para garantir que o email tem formato válido.
+
+Cadastro
+
+Pega os valores dos inputs.
+
+Confere email, senha (mínimo 6 caracteres), e se as senhas coincidem.
+
+Verifica se o email já está cadastrado no localStorage.
+
+Se tudo certo, salva os dados no localStorage simulando um banco de dados local.
+
+Login
+
+Pega email e senha do formulário.
+
+Confere se o email existe no localStorage.
+
+Compara a senha digitada com a salva.
+
+Se válido, exibe alerta de sucesso e redireciona para página home.html.
+
+Por que usar localStorage
+
+É um armazenamento simples no navegador que guarda dados mesmo depois de fechar a aba.
+
+Aqui usamos para simular um cadastrologin sem backend.
+
+Não é seguro para dados reais, mas ótimo para aprendizado.
+
+O que você precisa aprender para entender tudo isso
+
+HTML Básico
+
+Estrutura de tags, formulários, inputs, botões.
+
+CSS Básico
+
+Seletores, propriedades de layout (flexbox, margin, padding), cores, fontes.
+
+JavaScript Básico
+
+Manipulação do DOM (getElementById, addEventListener)
+
+Eventos de formulário (submit)
+
+Manipulação de estilos (mostraresconder elementos)
+
+Validação de dados
+
+Uso do localStorage
+
+Redirecionamento (window.location.href)

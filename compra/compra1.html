@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Finalizar</title>
+  <link rel="stylesheet" href="compra.css" />
+</head>
+<body>
+  <header>Finalizar Compra</header>
+  <main>
+    <h2>Curso: Gestão de Finanças Pessoais</h2>
+    <div class="price-info">Valor: R$ 149,90</div>
+
+    <form id="purchaseForm">
+      <label for="name">Nome Completo:</label>
+      <input type="text" id="name" name="name" placeholder="Seu nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+      <label for="payment">Forma de Pagamento:</label>
+      <select id="payment" name="payment" required>
+        <option value="">Selecione</option>
+        <option value="credit_card">Cartão de Crédito</option>
+        <option value="boleto">Boleto Bancário</option>
+        <option value="pix">PIX</option>
+      </select>
+
+      <button type="submit">Confirmar Compra</button>
+    </form>
+  </main>
+
+  <script src="compra.js"></script>
+</body>
+</html>
